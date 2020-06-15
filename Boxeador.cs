@@ -13,17 +13,19 @@ namespace gimnasio{
        public int edad {get;set;}
        public string categoria {get;set;}
        public double altura {get;set;}
+       public string entrenadorAsignado {get;set;}
 
     
 
 
-    public Boxeador(string nombre, string apellido, int peso, int edad, string categoria, double altura){
+    public Boxeador(string nombre, string apellido, int peso, int edad, string categoria, double altura, string entrenadorAsignado){
         this.nombre = nombre;
         this.apellido = apellido;
         this.peso = peso;
         this.edad = edad;
         this.categoria = categoria;
         this.altura = altura;
+        this.entrenadorAsignado = entrenadorAsignado;
 
     }   
 

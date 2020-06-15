@@ -17,15 +17,15 @@ namespace gimnasio
            Entrenador recepcion = new Entrenador();
            recepcion.nombre = "Recepcion";
 
-           recepcion.asignoBoxeador(new Boxeador("Rocky", "Balboa", 88, 30, "", 1.80));
-           recepcion.asignoBoxeador(new Boxeador("Apollo", "Creed", 90, 31, "", 1.82));
-           recepcion.asignoBoxeador(new Boxeador("Dany", "Kid", 60, 20, "", 1.80));
-           recepcion.asignoBoxeador(new Boxeador("Locomotora", "Castro", 88, 40, "", 1.70));
-           recepcion.asignoBoxeador(new Boxeador("Mike", "Tyson", 100, 50, "", 1.88));
-           recepcion.asignoBoxeador(new Boxeador("Mole", "Moli", 120, 44, "", 1.80));
-           recepcion.asignoBoxeador(new Boxeador("Tigresa", "Acuña", 65, 44, "", 1.50));
-           recepcion.asignoBoxeador(new Boxeador("Chino", "Maidana", 50, 40, "", 1.60));
-           recepcion.asignoBoxeador(new Boxeador("Floyd", "Mayweather", 80, 40, "", 1.60)); //El el 6to que debería entrenar con ChunLi, pero se descarta por disponibilidad
+           recepcion.asignoBoxeador(new Boxeador("Rocky", "Balboa", 88, 30, "", 1.80, ""));
+           recepcion.asignoBoxeador(new Boxeador("Apollo", "Creed", 90, 31, "", 1.82, ""));
+           recepcion.asignoBoxeador(new Boxeador("Dany", "Kid", 60, 20, "", 1.80, ""));
+           recepcion.asignoBoxeador(new Boxeador("Locomotora", "Castro", 88, 40, "", 1.70, ""));
+           recepcion.asignoBoxeador(new Boxeador("Mike", "Tyson", 100, 50, "", 1.88, ""));
+           recepcion.asignoBoxeador(new Boxeador("Mole", "Moli", 120, 44, "", 1.80, ""));
+           recepcion.asignoBoxeador(new Boxeador("Tigresa", "Acuña", 65, 44, "", 1.50, ""));
+           recepcion.asignoBoxeador(new Boxeador("Chino", "Maidana", 50, 40, "", 1.60, ""));
+           recepcion.asignoBoxeador(new Boxeador("Floyd", "Mayweather", 80, 40, "", 1.60, "")); //El el 6to que debería entrenar con ChunLi, pero se descarta por disponibilidad
 
            //Los cuatro entrenadores del gimnasio
 
@@ -48,41 +48,49 @@ namespace gimnasio
             if(item.peso<52.163 && boxeadores_e1<limiteEntrenador){
                     e1.asignoBoxeador(item);
                     item.categoria = "Mosca";
+                    item.entrenadorAsignado = e1.nombre;
                     boxeadores_e1++;
             }  
             if(item.peso>=52.163 && item.peso<55.338 && boxeadores_e1<limiteEntrenador){
                     e1.asignoBoxeador(item);
                     item.categoria = "Gallo";
+                    item.entrenadorAsignado = e1.nombre;
                     boxeadores_e1++;
             }
             if(item.peso>=55.338 && item.peso<58.967 && boxeadores_e2<limiteEntrenador){
                     e2.asignoBoxeador(item);
                     item.categoria = "Pluma";
+                    item.entrenadorAsignado = e2.nombre;
                     boxeadores_e2++;
             }        
             if(item.peso>=58.967 && item.peso<63.503 && boxeadores_e2<limiteEntrenador){
                     e2.asignoBoxeador(item);
                     item.categoria = "Ligero";
+                    item.entrenadorAsignado = e2.nombre;
                     boxeadores_e2++;
             }        
             if(item.peso>=63.503 && item.peso<69.853 && boxeadores_e3<limiteEntrenador){
                     e3.asignoBoxeador(item);
                     item.categoria = "Welter";
+                    item.entrenadorAsignado = e3.nombre;
                     boxeadores_e3++;
             } 
             if(item.peso>=69.853 && item.peso<76.205 && boxeadores_e3<limiteEntrenador){
                     e3.asignoBoxeador(item);
                     item.categoria = "Mediano";
+                    item.entrenadorAsignado = e3.nombre;
                     boxeadores_e3++;
             } 
             if(item.peso>=76.205 && item.peso<91 && boxeadores_e4<limiteEntrenador ){
                     e4.asignoBoxeador(item);
                     item.categoria = "Mediopesado";
+                    item.entrenadorAsignado = e4.nombre;
                     boxeadores_e4++;
             } 
             if(item.peso>=91 && boxeadores_e4<limiteEntrenador){
                     e4.asignoBoxeador(item);
                     item.categoria = "Pesado";
+                    item.entrenadorAsignado = e4.nombre;
                     boxeadores_e4++;
             } 
             cant_boxeadores++;
