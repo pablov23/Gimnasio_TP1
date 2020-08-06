@@ -18,7 +18,7 @@ En la ficha del Boxeador se desea guardar: Nombre, Apellido, edad, altura, peso,
 
 Las categorías serán las 8 típicas del Boxeo:
 
-Categoría         PESO en Kg
+                  PESO en Kg
                   Mínimo   Máximo
 - Mosca           48.988 	50.802
 - Gallo           52.163 	53.525
