@@ -1,6 +1,6 @@
 # Sistema-Gimnasio
 
-#Ejercicio: Gimnasio de Boxeo
+## Ejercicio: Gimnasio de Boxeo
 
 Lo han contratado para realizar un Sistema para un Gimnasio de Boxeo.
 Se desea ingresar en el sistema a los aspirantes a Boxeador que llegan en un día.
