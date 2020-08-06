@@ -18,16 +18,16 @@ En la ficha del Boxeador se desea guardar: Nombre, Apellido, edad, altura, peso,
 
 Las categorías serán las 8 típicas del Boxeo:
 
-Categoría                    PESO en Kg
-                 Mínimo   Máximo
--Mosca           48.988 	50.802
--Gallo           52.163 	53.525
--Pluma           55.338 	57.152
--Ligero          58.967 	61.237
--Welter          63.503 	66.678
--Mediano         69.853 	72.562
--Mediopesado     76.205 	79.378
--Pesado            91     Sin Límite
+Categoría         PESO en Kg
+-                 Mínimo   Máximo
+- Mosca           48.988 	50.802
+- Gallo           52.163 	53.525
+- Pluma           55.338 	57.152
+- Ligero          58.967 	61.237
+- Welter          63.503 	66.678
+- Mediano         69.853 	72.562
+- Mediopesado     76.205 	79.378
+- Pesado            91     Sin Límite
 
 Los Boxeadores que caen dentro del límite de una categoría, son asignados a ella.
 Los que caen fuera de los límites serán asignados a la categoría inmediatamente inferior, se espera que el Boxeador pierda peso en el entrenamiento.
